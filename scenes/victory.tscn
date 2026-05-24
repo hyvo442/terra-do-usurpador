@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dvictoryscn001"]
+
+[ext_resource type="Theme" uid="uid://ba08a7g0d46b7" path="res://resources/new_theme.tres" id="1_theme"]
+[ext_resource type="Script" path="res://scripts/victory.gd" id="2_script"]
+
+[node name="victory" type="CanvasLayer"]
+layer = 50
+process_mode = 3
+script = ExtResource("2_script")
+
+[node name="bg_overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="message_container" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="message_label" type="Label" parent="message_container"]
+layout_mode = 2
+theme = ExtResource("1_theme")
+text = "parabéns pela vitória guerreiro,
+o reino sempre lembrara de você"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

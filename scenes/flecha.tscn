@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bwjlqm6kcht7n"]
+
+[ext_resource type="Script" uid="uid://doj3ie38mp8ku" path="res://scripts/flecha.gd" id="1_fbll0"]
+[ext_resource type="Texture2D" uid="uid://bqjljgii1oa5o" path="res://sprites/arqueiro/flecha/frame_000.png" id="flecha_0"]
+[ext_resource type="Texture2D" uid="uid://xsbyel1npu6x" path="res://sprites/arqueiro/flecha/frame_001.png" id="flecha_1"]
+[ext_resource type="Texture2D" uid="uid://ba8kl2jxktrm4" path="res://sprites/arqueiro/flecha/frame_002.png" id="flecha_2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fbll0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("flecha_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("flecha_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("flecha_2")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbll0"]
+size = Vector2(59, 7.75)
+
+[node name="flecha" type="Area2D" unique_id=2011766624]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_fbll0")
+
+[node name="anim" type="AnimatedSprite2D" parent="." unique_id=1947633535]
+position = Vector2(-4.5, -3)
+scale = Vector2(0.075, 0.075)
+sprite_frames = SubResource("SpriteFrames_fbll0")
+animation = &"fly"
+autoplay = "fly"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=529213770]
+position = Vector2(-4.5, -3.125)
+shape = SubResource("RectangleShape2D_fbll0")
+
+[node name="lifetime_timer" type="Timer" parent="." unique_id=2075868916]
+one_shot = true

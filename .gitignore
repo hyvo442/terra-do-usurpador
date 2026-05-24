@@ -1,0 +1,66 @@
+# ------------------------------------------------------------------
+# .gitignore para projetos Godot 4
+# ------------------------------------------------------------------
+
+# Cache do editor / importacao automatica (Godot 4)
+# Esta pasta eh regenerada quando o projeto eh aberto, nao deve ir pro git.
+.godot/
+
+# Pasta de exportacao Android (gerada pelo build template)
+/android/
+
+# Builds e exportacoes do jogo
+/builds/
+/exports/
+/dist/
+*.exe
+*.pck
+*.apk
+*.aab
+*.dmg
+*.zip
+
+# Arquivos temporarios do editor
+*.tmp
+*.tmp.*
+*.bak
+*.orig
+*.swp
+*~
+
+# Logs
+*.log
+logs/
+
+# Backups locais do editor de cenas
+*.tscn~
+*.tres~
+*.gd~
+
+# Crash dumps
+crash.log
+crash_*.dmp
+
+# Cobertura de testes (gut, gdunit, etc)
+.coverage/
+
+# Sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editores externos
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Variaveis de ambiente locais
+.env
+.env.local

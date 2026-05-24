@@ -1,0 +1,445 @@
+[gd_scene format=3 uid="uid://0oy3n4wmd7xn"]
+
+[ext_resource type="Script" uid="uid://dpf3k8m2qyawt" path="res://scripts/cavaleiro.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://bjegxw0pl36hb" path="res://scenes/hitbox.tscn" id="2_hitbox"]
+[ext_resource type="Texture2D" uid="uid://brxpfkrgjst02" path="res://sprites/cavaleiro/attack/frame_005.png" id="tex_200"]
+[ext_resource type="Texture2D" uid="uid://bak1wn2ndnd01" path="res://sprites/cavaleiro/attack/frame_006.png" id="tex_201"]
+[ext_resource type="Texture2D" uid="uid://df61dwxm0ref5" path="res://sprites/cavaleiro/attack/frame_007.png" id="tex_202"]
+[ext_resource type="Texture2D" uid="uid://fhdl2ldlei74" path="res://sprites/cavaleiro/attack/frame_008.png" id="tex_203"]
+[ext_resource type="Texture2D" uid="uid://cp3p3ln4qnclm" path="res://sprites/cavaleiro/attack/frame_009.png" id="tex_204"]
+[ext_resource type="Texture2D" uid="uid://klws2a5umg0i" path="res://sprites/cavaleiro/attack/frame_010.png" id="tex_205"]
+[ext_resource type="Texture2D" uid="uid://b7nmokfyqr3pf" path="res://sprites/cavaleiro/attack/frame_011.png" id="tex_206"]
+[ext_resource type="Texture2D" uid="uid://x136hpkiy5qv" path="res://sprites/cavaleiro/attack/frame_012.png" id="tex_207"]
+[ext_resource type="Texture2D" uid="uid://dpfbn8a0aubik" path="res://sprites/cavaleiro/attack/frame_013.png" id="tex_208"]
+[ext_resource type="Texture2D" uid="uid://com3tqfxbog7u" path="res://sprites/cavaleiro/attack/frame_014.png" id="tex_209"]
+[ext_resource type="Texture2D" uid="uid://qt7hew6fnrr3" path="res://sprites/cavaleiro/attack/frame_015.png" id="tex_210"]
+[ext_resource type="Texture2D" uid="uid://bxviur8kwpr6e" path="res://sprites/cavaleiro/attack/frame_016.png" id="tex_211"]
+[ext_resource type="Texture2D" uid="uid://gyb0rw604pum" path="res://sprites/cavaleiro/attack/frame_017.png" id="tex_212"]
+[ext_resource type="Texture2D" uid="uid://1422fclcml0j" path="res://sprites/cavaleiro/attack/frame_018.png" id="tex_213"]
+[ext_resource type="Texture2D" uid="uid://caam7wwivqms8" path="res://sprites/cavaleiro/attack/frame_019.png" id="tex_214"]
+[ext_resource type="Texture2D" uid="uid://d3n8cdwu23agt" path="res://sprites/cavaleiro/attack/frame_020.png" id="tex_215"]
+[ext_resource type="Texture2D" uid="uid://cgx4lblpumej7" path="res://sprites/cavaleiro/attack/frame_021.png" id="tex_216"]
+[ext_resource type="Texture2D" uid="uid://cxf7uf1awcuwt" path="res://sprites/cavaleiro/attack/frame_022.png" id="tex_217"]
+[ext_resource type="Texture2D" uid="uid://ddvd140n708g5" path="res://sprites/cavaleiro/attack/frame_023.png" id="tex_218"]
+[ext_resource type="Texture2D" uid="uid://c5atskptd57gu" path="res://sprites/cavaleiro/attack/frame_024.png" id="tex_219"]
+[ext_resource type="Texture2D" uid="uid://cyihesf1yom0g" path="res://sprites/cavaleiro/hurt/frame_005.png" id="tex_220"]
+[ext_resource type="Texture2D" uid="uid://c5mbrm0hgah15" path="res://sprites/cavaleiro/hurt/frame_006.png" id="tex_221"]
+[ext_resource type="Texture2D" uid="uid://dm7rmachpxgag" path="res://sprites/cavaleiro/hurt/frame_007.png" id="tex_222"]
+[ext_resource type="Texture2D" uid="uid://ixpcbdq6rwob" path="res://sprites/cavaleiro/hurt/frame_008.png" id="tex_223"]
+[ext_resource type="Texture2D" uid="uid://5os2m6arm7di" path="res://sprites/cavaleiro/hurt/frame_009.png" id="tex_224"]
+[ext_resource type="Texture2D" uid="uid://dlp5px78gbo4h" path="res://sprites/cavaleiro/hurt/frame_010.png" id="tex_225"]
+[ext_resource type="Texture2D" uid="uid://crvpx3tp6bi5c" path="res://sprites/cavaleiro/hurt/frame_011.png" id="tex_226"]
+[ext_resource type="Texture2D" uid="uid://bpcl4jn2c8rwv" path="res://sprites/cavaleiro/hurt/frame_012.png" id="tex_227"]
+[ext_resource type="Texture2D" uid="uid://dmhn325kvtfrn" path="res://sprites/cavaleiro/hurt/frame_013.png" id="tex_228"]
+[ext_resource type="Texture2D" uid="uid://bpco5qynakk23" path="res://sprites/cavaleiro/hurt/frame_014.png" id="tex_229"]
+[ext_resource type="Texture2D" uid="uid://bagnb4wgn44o2" path="res://sprites/cavaleiro/hurt/frame_015.png" id="tex_230"]
+[ext_resource type="Texture2D" uid="uid://cyhlyrinyvo2m" path="res://sprites/cavaleiro/hurt/frame_016.png" id="tex_231"]
+[ext_resource type="Texture2D" uid="uid://br2u2r2cv037v" path="res://sprites/cavaleiro/hurt/frame_017.png" id="tex_232"]
+[ext_resource type="Texture2D" uid="uid://cbiy8hrssa4kb" path="res://sprites/cavaleiro/hurt/frame_018.png" id="tex_233"]
+[ext_resource type="Texture2D" uid="uid://cc5l1whf1lr6" path="res://sprites/cavaleiro/hurt/frame_019.png" id="tex_234"]
+[ext_resource type="Texture2D" uid="uid://noeigt5u3ycf" path="res://sprites/cavaleiro/hurt/frame_020.png" id="tex_235"]
+[ext_resource type="Texture2D" uid="uid://vnplop4u1d7r" path="res://sprites/cavaleiro/hurt/frame_021.png" id="tex_236"]
+[ext_resource type="Texture2D" uid="uid://dco33orouxtku" path="res://sprites/cavaleiro/hurt/frame_022.png" id="tex_237"]
+[ext_resource type="Texture2D" uid="uid://daswed4q2v1ju" path="res://sprites/cavaleiro/hurt/frame_023.png" id="tex_238"]
+[ext_resource type="Texture2D" uid="uid://bickulrtpyf7i" path="res://sprites/cavaleiro/hurt/frame_024.png" id="tex_239"]
+[ext_resource type="Texture2D" uid="uid://cjvx13muvnpiu" path="res://sprites/cavaleiro/hurt/frame_025.png" id="tex_240"]
+[ext_resource type="Texture2D" uid="uid://cfd0xojpnxgtd" path="res://sprites/cavaleiro/hurt/frame_026.png" id="tex_241"]
+[ext_resource type="Texture2D" uid="uid://4t5wfimrseua" path="res://sprites/cavaleiro/hurt/frame_027.png" id="tex_242"]
+[ext_resource type="Texture2D" uid="uid://cd6ehp60a8ga4" path="res://sprites/cavaleiro/hurt/frame_028.png" id="tex_243"]
+[ext_resource type="Texture2D" uid="uid://uxweo8rdavva" path="res://sprites/cavaleiro/hurt/frame_029.png" id="tex_244"]
+[ext_resource type="Texture2D" uid="uid://dg2sh8lfcerly" path="res://sprites/cavaleiro/hurt/frame_030.png" id="tex_245"]
+[ext_resource type="Texture2D" uid="uid://blq11hibbvtj1" path="res://sprites/cavaleiro/hurt/frame_031.png" id="tex_246"]
+[ext_resource type="Texture2D" uid="uid://d33onky1ies8r" path="res://sprites/cavaleiro/hurt/frame_032.png" id="tex_247"]
+[ext_resource type="Texture2D" uid="uid://cs6igg2ok4on" path="res://sprites/cavaleiro/hurt/frame_033.png" id="tex_248"]
+[ext_resource type="Texture2D" uid="uid://ds4p0tpec773q" path="res://sprites/cavaleiro/hurt/frame_034.png" id="tex_249"]
+[ext_resource type="Texture2D" uid="uid://pgy8h7nh6x0r" path="res://sprites/cavaleiro/hurt/frame_035.png" id="tex_250"]
+[ext_resource type="Texture2D" uid="uid://dju4vxmnlbpct" path="res://sprites/cavaleiro/idle/frame_000.png" id="tex_251"]
+[ext_resource type="Texture2D" uid="uid://1knf6j54eymg" path="res://sprites/cavaleiro/idle/frame_001.png" id="tex_252"]
+[ext_resource type="Texture2D" uid="uid://jafcptw2dpmm" path="res://sprites/cavaleiro/idle/frame_002.png" id="tex_253"]
+[ext_resource type="Texture2D" uid="uid://22ddj60ngkje" path="res://sprites/cavaleiro/idle/frame_003.png" id="tex_254"]
+[ext_resource type="Texture2D" uid="uid://blgk7jgher60j" path="res://sprites/cavaleiro/idle/frame_004.png" id="tex_255"]
+[ext_resource type="Texture2D" uid="uid://bmu1gp8tm3hhm" path="res://sprites/cavaleiro/idle/frame_005.png" id="tex_256"]
+[ext_resource type="Texture2D" uid="uid://d2nffv3lghwci" path="res://sprites/cavaleiro/idle/frame_006.png" id="tex_257"]
+[ext_resource type="Texture2D" uid="uid://btsjdc8tdta10" path="res://sprites/cavaleiro/idle/frame_007.png" id="tex_258"]
+[ext_resource type="Texture2D" uid="uid://c7ueav8s75na5" path="res://sprites/cavaleiro/idle/frame_008.png" id="tex_259"]
+[ext_resource type="Texture2D" uid="uid://dxh7sswyr0lcs" path="res://sprites/cavaleiro/idle/frame_009.png" id="tex_260"]
+[ext_resource type="Texture2D" uid="uid://c08l70taiclo2" path="res://sprites/cavaleiro/idle/frame_010.png" id="tex_261"]
+[ext_resource type="Texture2D" uid="uid://ixohvgo3qvvt" path="res://sprites/cavaleiro/idle/frame_011.png" id="tex_262"]
+[ext_resource type="Texture2D" uid="uid://co68arbvyhvg0" path="res://sprites/cavaleiro/idle/frame_012.png" id="tex_263"]
+[ext_resource type="Texture2D" uid="uid://c3s2mgkgbvh84" path="res://sprites/cavaleiro/idle/frame_013.png" id="tex_264"]
+[ext_resource type="Texture2D" uid="uid://cjfmfx30uec6d" path="res://sprites/cavaleiro/idle/frame_014.png" id="tex_265"]
+[ext_resource type="Texture2D" uid="uid://boetpfxrtajpn" path="res://sprites/cavaleiro/idle/frame_015.png" id="tex_266"]
+[ext_resource type="Texture2D" uid="uid://57ksbhnugcj0" path="res://sprites/cavaleiro/run/frame_000.png" id="tex_267"]
+[ext_resource type="Texture2D" uid="uid://ul30rt6i6ku0" path="res://sprites/cavaleiro/run/frame_001.png" id="tex_268"]
+[ext_resource type="Texture2D" uid="uid://pab53rwno528" path="res://sprites/cavaleiro/run/frame_002.png" id="tex_269"]
+[ext_resource type="Texture2D" uid="uid://cr0fx15dv5lbt" path="res://sprites/cavaleiro/run/frame_003.png" id="tex_270"]
+[ext_resource type="Texture2D" uid="uid://c1o8x4arktdbx" path="res://sprites/cavaleiro/run/frame_004.png" id="tex_271"]
+[ext_resource type="Texture2D" uid="uid://bolisjubj55bh" path="res://sprites/cavaleiro/run/frame_005.png" id="tex_272"]
+[ext_resource type="Texture2D" uid="uid://b0rg3qiwmrvft" path="res://sprites/cavaleiro/run/frame_006.png" id="tex_273"]
+[ext_resource type="Texture2D" uid="uid://bandrb3a5ylur" path="res://sprites/cavaleiro/run/frame_007.png" id="tex_274"]
+[ext_resource type="Texture2D" uid="uid://bxst6fautqfcb" path="res://sprites/cavaleiro/run/frame_008.png" id="tex_275"]
+[ext_resource type="Texture2D" uid="uid://c4la5fbjsifgf" path="res://sprites/cavaleiro/run/frame_009.png" id="tex_276"]
+[ext_resource type="Texture2D" uid="uid://d0ebh3fnye51c" path="res://sprites/cavaleiro/run/frame_010.png" id="tex_277"]
+[ext_resource type="Texture2D" uid="uid://ddt6xsrfnfxg3" path="res://sprites/cavaleiro/run/frame_011.png" id="tex_278"]
+[ext_resource type="Texture2D" uid="uid://dbjqfdpl0xyv3" path="res://sprites/cavaleiro/run/frame_012.png" id="tex_279"]
+[ext_resource type="Texture2D" uid="uid://weaotps6iskv" path="res://sprites/cavaleiro/run/frame_013.png" id="tex_280"]
+[ext_resource type="Texture2D" uid="uid://hl8cq77otguj" path="res://sprites/cavaleiro/run/frame_014.png" id="tex_281"]
+[ext_resource type="Texture2D" uid="uid://dffinycxl46ic" path="res://sprites/cavaleiro/run/frame_015.png" id="tex_282"]
+[ext_resource type="Texture2D" uid="uid://22ceafal2tpi" path="res://sprites/cavaleiro/run/frame_016.png" id="tex_283"]
+[ext_resource type="Texture2D" uid="uid://dcoa6hxnrcph1" path="res://sprites/cavaleiro/run/frame_017.png" id="tex_284"]
+[ext_resource type="Texture2D" uid="uid://c7aw37njf3br2" path="res://sprites/cavaleiro/run/frame_018.png" id="tex_285"]
+[ext_resource type="Texture2D" uid="uid://c5jeeir3xqs57" path="res://sprites/cavaleiro/run/frame_019.png" id="tex_286"]
+[ext_resource type="Texture2D" uid="uid://0dn8tr1v5b3o" path="res://sprites/cavaleiro/run/frame_020.png" id="tex_287"]
+[ext_resource type="Texture2D" uid="uid://cvwqfi3ybbicl" path="res://sprites/cavaleiro/run/frame_021.png" id="tex_288"]
+[ext_resource type="Texture2D" uid="uid://dipd7q0c8fhqu" path="res://sprites/cavaleiro/run/frame_022.png" id="tex_289"]
+[ext_resource type="Texture2D" uid="uid://bos4f0tvnlld4" path="res://sprites/cavaleiro/run/frame_023.png" id="tex_290"]
+[ext_resource type="Texture2D" uid="uid://bhxsu1stsmq06" path="res://sprites/cavaleiro/run/frame_024.png" id="tex_291"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cavaleiroe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("tex_200")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_201")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_202")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_203")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_204")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_205")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_206")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_207")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_208")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_209")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_210")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_211")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_212")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_213")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_214")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_215")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_216")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_217")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_218")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_219")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("tex_220")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_221")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_222")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_223")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_224")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_225")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_226")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_227")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_228")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_229")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_230")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_231")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_232")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_233")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_234")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_235")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_236")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_237")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_238")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_239")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_240")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_241")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_242")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_243")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_244")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_245")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_246")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_247")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_248")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_249")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_250")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("tex_251")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_252")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_253")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_254")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_255")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_256")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_257")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_258")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_259")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_260")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_261")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_262")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_263")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_264")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_265")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_266")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("tex_267")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_268")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_269")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_270")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_271")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_272")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_273")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_274")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_275")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_276")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_277")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_278")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_279")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_280")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_281")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_282")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_283")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_284")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_285")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_286")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_287")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_288")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_289")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_290")
+}, {
+"duration": 1.0,
+"texture": ExtResource("tex_291")
+}],
+"loop": true,
+"name": &"run",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(40.8269, 71.6346)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_detect"]
+size = Vector2(432.6923, 96.1538)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_attack"]
+size = Vector2(46.038452, 72.23074)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stomp"]
+size = Vector2(42.4231, 72.23074)
+
+[node name="cavaleiroe" type="CharacterBody2D" unique_id=142678870]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_script")
+
+[node name="anim" type="AnimatedSprite2D" parent="." unique_id=881041246]
+position = Vector2(0, -38.4615)
+scale = Vector2(0.1875, 0.1875)
+sprite_frames = SubResource("SpriteFrames_cavaleiroe")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.11374151
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1874190278]
+position = Vector2(-12.41345, -39.1827)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="detection_area" type="Area2D" parent="." unique_id=1122412307]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area" unique_id=393720730]
+position = Vector2(3, -51)
+shape = SubResource("RectangleShape2D_detect")
+
+[node name="attack_hitbox" type="Area2D" parent="." unique_id=622906760]
+position = Vector2(33.6538, -19.2308)
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack_hitbox" unique_id=1260312150]
+position = Vector2(-10.673027, -20.653824)
+shape = SubResource("RectangleShape2D_attack")
+
+[node name="hitbox" parent="." unique_id=616941741 instance=ExtResource("2_hitbox")]
+
+[node name="colision2" type="CollisionShape2D" parent="hitbox" unique_id=1134136655]
+position = Vector2(-12.21155, -40)
+shape = SubResource("RectangleShape2D_stomp")

@@ -1,0 +1,8 @@
+foram utilizadas algumas ias, para desenvolver o projeto, a principal delas foi o ludoIA que ajudou na criação de sprites com os frames de animações dos personagens. Além do uso do gemini(nanobana) e do claudecode na criacao de alguns assets e scripts de nodes no jogo
+prompt cavaleiro:crie um sprite de um cavaleiro com uma capa vermelja, com armadura pelo corpo todo, ele vai ter uma espada que ele segura com as duas mao, no estilo 2d medieval 16bits
+prompt player:crie um sprite de um cavaleiro com uma capa azul, com armadura pelo corpo todo, ele vai ter um escudo na mao esquerda e uma espada na mao direita, no estilo 2d medieval 16bits
+prompt arqueiro:Agora nesse mesmo estilo faça um arqueiro que tem uma aljava nas costa e utiliza uma capa vermelha igual, ele carrega um arco na mão e possui pouca armadura no corpo
+prompt dragao:crie o sprite de um dragao grande e preto 2d estilo 16 bits em jogo medieval utilizando o player(imagem que estou te enviando como base de estilo)
+Prompt cenario 2:gere a imagem de um cenario metroidvania 2d estilo medieval 16 bits em que vai ter um area com um castelo na direita com uma porta para o personagem entrar no castelo da foto
+prompt cenario 3:crie a cena dentro de uma sala do trono em que um velho ao canto direito da sala vai estar sentado
+OBS: Não consegui salvar o prompt dos sprites devido a grande quantidade de sprites requisitados no ludoIA

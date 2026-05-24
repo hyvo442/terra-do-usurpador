@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b8x4mfp2qkn1y"]
+
+[ext_resource type="Script" uid="uid://dq3v5n8j2km7p" path="res://scripts/bola_de_fogo.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://btaukguwhxbk8" path="res://sprites/dragao_chefe/bola_de_fogo/frame_0.png" id="pj_0"]
+[ext_resource type="Texture2D" uid="uid://brn3qife6c2dr" path="res://sprites/dragao_chefe/bola_de_fogo/frame_002.png" id="pj_1"]
+[ext_resource type="Texture2D" uid="uid://bjbxq7tkrny2a" path="res://sprites/dragao_chefe/bola_de_fogo/frame_003.png" id="pj_2"]
+[ext_resource type="Texture2D" uid="uid://cgqxq4k0bseru" path="res://sprites/dragao_chefe/bola_de_fogo/frame_004.png" id="pj_3"]
+[ext_resource type="Texture2D" uid="uid://2o1n13byh72w" path="res://sprites/dragao_chefe/bola_de_fogo/frame_005.png" id="pj_4"]
+[ext_resource type="Texture2D" uid="uid://cveyajqd1b1tn" path="res://sprites/dragao_chefe/bola_de_fogo/frame_007.png" id="pj_5"]
+[ext_resource type="Texture2D" uid="uid://bsg1dhbk5lko" path="res://sprites/dragao_chefe/bola_de_fogo/frame_008.png" id="pj_6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("pj_0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("pj_6")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj"]
+size = Vector2(31.5, 29)
+
+[node name="bola_de_fogo" type="Area2D" unique_id=898387969]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_script")
+
+[node name="anim" type="AnimatedSprite2D" parent="." unique_id=1160147917]
+position = Vector2(-1, -17)
+scale = Vector2(0.114656076, 0.13263157)
+sprite_frames = SubResource("SpriteFrames_pj")
+animation = &"fly"
+autoplay = "fly"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2008296041]
+position = Vector2(1, -19)
+shape = SubResource("RectangleShape2D_pj")
+
+[node name="lifetime_timer" type="Timer" parent="." unique_id=1803076559]
+one_shot = true

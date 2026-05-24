@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cqme5h2pj1xkv"]
+
+[ext_resource type="Theme" uid="uid://ba08a7g0d46b7" path="res://resources/new_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://bx7w3kf2qm8nz" path="res://scripts/game_over.gd" id="2_script"]
+
+[node name="game_over" type="CanvasLayer"]
+layer = 10
+process_mode = 3
+script = ExtResource("2_script")
+
+[node name="bg_overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="menu_holder" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -80.0
+offset_right = 120.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="title_label" type="Label" parent="menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_theme")
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="restart_btn" type="Button" parent="menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_theme")
+text = "JOGAR DE NOVO"
+
+[node name="quit_btn" type="Button" parent="menu_holder"]
+layout_mode = 2
+theme = ExtResource("1_theme")
+text = "SAIR DO JOGO"
+
+[connection signal="pressed" from="menu_holder/restart_btn" to="." method="_on_restart_btn_pressed"]
+[connection signal="pressed" from="menu_holder/quit_btn" to="." method="_on_quit_btn_pressed"]
